@@ -28,9 +28,8 @@ h1{
   color: var(--heading-text-color);
   font-family: var(--heading-font);
   margin-top: 1rem;
-  
-
 }
+
 img {
   width: 150px;
   height: auto;
