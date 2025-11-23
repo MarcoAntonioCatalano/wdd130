@@ -79,18 +79,7 @@ nav a {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-on-dark); 
-    border: 1px solid var(--text-on-dark);
     transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: var(--accent1-color);
-}
-
-/* Remove or redefine this if the image is the logo outside the nav */
-nav img {
-    /* This rule is likely not needed if the logo is a sibling to the nav */
-    display: none; 
 }
 
 
@@ -130,6 +119,7 @@ h1 {
     opacity: 99%;
     color: var(--text-on-dark);
     display: flex;
+    flex-direction: row-reverse;
     gap: 1rem;
     top: 70%;
 }
