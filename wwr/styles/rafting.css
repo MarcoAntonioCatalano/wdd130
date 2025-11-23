@@ -111,10 +111,10 @@ h1 {
 
 .hero article {
     /* Happy Customer Article */
-    position: absolute; 
+    position: relative; 
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(38, 70, 83, 0.75);
     opacity: 99%;
     color: var(--text-on-dark);
@@ -129,13 +129,14 @@ h1 {
     width: 100px;
     height: auto;
     border-radius: 5%;
+    position: relative;
 }
 
 /* History H2 style (removed conflicting aqua background) */
 
 
-.history { /* HISTORY */
-    padding: 5px; 
+section { /* HISTORY */
+    padding: 10px; 
     display: flex; 
     align-items: center;
     justify-content: space-evenly;
@@ -145,23 +146,23 @@ h1 {
     
 }
 
-.history h2 {
+section h2 {
    position: absolute;
    background-color: #264653;
    color: whitesmoke;
    text-align: center;
    width: 840px;
    top: -12%;
-   right: -1%;
+   right: 0%;
 }
-.history p {
+section p {
   color: #333;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
 }
 /* IMAGE */
-.history-pic { 
-    width: 1200px;
+.history-pic {
+    width: 1000px;
     color: #f7f7f7; 
     border-radius: 5%;  
 }
