@@ -1,6 +1,3 @@
-/* -------------------- */
-/* 1. Base & Variables */
-/* -------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +6,7 @@
 
 :root {
     /* Define required variables (e.g., missing padding, text color) */
-    --primary-color: lightblue;     /* light blue */
+    --primary-color: lightblue;     /* dark slate blue */
     --secondary-color: #f4a261;     /* warm sand/orange */
     --accent1-color: #264653;       /* dark slate blue */
     --accent2-color: #e9c46a;       /* light golden yellow */
@@ -61,7 +58,7 @@ nav, p, article, section {
 /* 3. Header & Navigation */
 /* -------------------- */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     padding: var(--base-padding);
     display: flex;
     justify-content: space-between; /* Better for logo (or image) and nav */
@@ -95,7 +92,7 @@ nav a {
     display: block;
 }
 
-h1 {
+.hero h1 {
     /*  Dry Oar Rafting */
     position: absolute;
     top: 10%;
@@ -111,7 +108,7 @@ h1 {
 
 .hero article {
     /* Happy Customer Article */
-    position: relative; 
+    position: absolute; 
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -129,7 +126,7 @@ h1 {
     width: 100px;
     height: auto;
     border-radius: 5%;
-    position: relative;
+    float: right;
 }
 
 /* History H2 style (removed conflicting aqua background) */
