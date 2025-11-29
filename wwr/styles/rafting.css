@@ -193,8 +193,7 @@ section p {
     flex: 1 1 150px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 5%;
-
+    border-radius: 10%;
 }
 
 /* --- Footer Styling --- */
@@ -211,6 +210,9 @@ footer {
     display: flex;
     padding: 5px;
     gap: .3125rem;
+}
+.socialmedia :hover {
+    background-color: var(--text-on-dark);
 }
 
 footer img {
