@@ -13,7 +13,7 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --text-on-dark: #fff;           /* White text for dark backgrounds */
-    --base-padding: 16px;           /* Replaced missing --padding */
+    --base-padding: 4px;           /* Replaced missing --padding */
 }
 
 body {
@@ -60,25 +60,30 @@ nav, p, article, section {
 header {
     background-color: var(--accent1-color);
     padding: var(--base-padding);
-    display: flex;
-    justify-content: space-between; /* Better for logo (or image) and nav */
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
 }
 
 nav {
-    display: flex;
     gap: 1.5rem; /* Spacing between links */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav :hover {
+    background-color: var(--accent2-color); /* #E9C46A */
+    color: var(--accent1-color); /* #264653 */ 
+    border-radius: 5%;
 }
 
 nav a {
-    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-on-dark); 
-    transition: background-color 0.3s;
 }
-
 
 .hero {
     position: relative;
@@ -135,6 +140,7 @@ nav a {
 section { /* HISTORY */
     padding: 10px; 
     display: flex; 
+    background-color: #fff;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
