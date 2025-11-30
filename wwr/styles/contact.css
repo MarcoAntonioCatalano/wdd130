@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Define required variables (e.g., missing padding, text color) */
+    --primary-color: lightblue;     /* dark slate blue */
+    --secondary-color: #f4a261;     /* warm sand/orange */
+    --accent1-color: #264653;       /* dark slate blue */
+    --accent2-color: #e9c46a;       /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-on-dark: #fff;           /* White text for dark backgrounds */
+    --base-padding: 4px;           /* Replaced missing --padding */
+}
+
+body {
+    /* Corrected variable usage */
+    color: var(--accent1-color); 
+    font-family: var(--body-font);
+}
+
+header, main, footer {
+    /* Set max content width for the main layout */
+    max-width: 840px; 
+    margin: 0 auto;
+}
+
+/* Base image styling, setting a default max width */
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* -------------------- */
+/* 2. Typography & General Spacing */
+/* -------------------- */
+h1, h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0.5rem; /* Add some space below headings */
+}
+
+/* Global padding for flow elements */
+nav, p, section {
+    padding: 8px;
+    /* Use margin for space between elements */
+    margin: 1rem 0; 
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: var(--base-padding);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+nav {
+    gap: 1.5rem; /* Spacing between links */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav :hover {
+    background-color: var(--accent2-color); /* #E9C46A */
+    color: var(--accent1-color); /* #264653 */ 
+    border-radius: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-on-dark); 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    padding: 2px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1.2fr; 
+    gap: 20px;
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 840px; /* Adjust this max-width as needed for your overall site */
+}
+
+map {
+    padding: 1px; 
+}
+iframe {
+    max-width: 400px;
+    height: 400px;
+}
+form {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 1%;
+    background-color: #fff;
+    display: grid;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+label, input, button, select, textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+    background-color: #fff;
+    position: relative;
+}
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+  margin: 1rem;
+  background-color: var(--accent1-color);  
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+button:hover{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 8px 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.gallery-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px;
+    grid-column: 1 / -1;
+    max-width: 840px;
+    width: 100%;
+}
+
+.gallery-container h2 { 
+    /*  ADVENTURE AWAITS YOU!*/
+   background-color: #264653;
+   color: whitesmoke;
+   max-width: 840px;
+   width: 100%;
+}
+.gallery-item {
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+/* --- Footer Styling --- */
+
+footer {
+  display: flex;
+  background-color: #264653 ;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-on-dark);
+}
+
+.socialmedia {
+    display: flex;
+    padding: 5px;
+    gap: .3125rem;
+}
+.socialmedia :hover {
+    background-color: var(--text-on-dark);
+}
+
+footer img {
+  width: 30px;
+  height: auto;
+}

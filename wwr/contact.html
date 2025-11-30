@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Contact Information</title>
+    <meta name="description" content="marco-antonio-catalano, web-fundamentals, web-development.">
+    <meta name="author" content="Marco Catalano">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-dryoarlogo.png" alt="Dry Oar Company Logo is a sarcastic symbol since there not a dry oar in the rafting adventures.
+        The oar is a key element that represents the intrepid spirt of rafting.">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Dry Oar Rafting Company</h1>
+        <address>
+            <p>123 Main River Street<br>
+                Kolob, California</p>
+            <p><a href="tel:+19999999999">+1 999 999 9999</a></p>
+            <p><a href="mailto:info@dryoar.com">info@dryoar.com</a></p>
+        </address>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.587820124316!2d-69.57765438477025!3d-34.56658798046894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967a5911ade41099%3A0xc2b8e457b432cf52!2sEl%20Sosneado%2C%20Mendoza%20Province%2C%20Argentina!5e0!3m2!1sen!2sus!4v1655555555555!5m2!1sen!2sus"
+                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <form>
+            <div class="form-item column2">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="fullname here">
+            </div>
+            <div class="form-item column2">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="@">
+            </div>
+            <div class="form-item column1"><label>Message Purpose</label></div>
+
+            <div class="form-item column2">
+                <label for="general_inquiry">General Inquiry</label>
+                <input type="radio" id="general_inquiry" name="subject" value="general">
+            </div>
+
+            <div class="form-item column2">
+                <label for="reservation_question">Reservation Question</label>
+                <input type="radio" id="reservation_question" name="subject" value="reservation">
+            </div>
+
+            <div class="form-item column2">
+                <label for="website_suggestion">Website Suggestion</label>
+                <input type="radio" id="website_suggestion" name="subject" value="suggestion">
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
+            <div class="form-item column 1">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+            <button type="submit">Get in Touch!</button>
+        </form>
+        <section class="gallery-container">
+            <h2>We are here to serve you!</h2>
+            <figure class="gallery-item">
+                <img src="images/first-instructor.jpg" alt="Male team leader before starting the first journey of the day. 
+                The beautiful white water river behind as the background">
+                <figcaption>Jack Burton</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/female-instructor.jpg" alt="A female instructor smiles while wearing the proper gear.
+                She seems ready to take on another rafting adventure">
+                <figcaption>Gracie Law</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/senior-instructor.jpg" alt="A senior instructor posing right next to the raft.
+                A helmet camera on his head is ready to capture great moments of the journey">
+                <figcaption>David Lo Pan</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 | Dry Oar Rafting | Marco A. Catalano</p>
+        <nav class="socialmedia">
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.jpg" alt="linkedin icon">
+            </a>
+            <a href="https://facebook.com">
+                <img src="images/facebook-icon.jpg" alt="facebook icon">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.jpg" alt="X icon">
+            </a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
