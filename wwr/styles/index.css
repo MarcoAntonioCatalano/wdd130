@@ -153,7 +153,68 @@ section h2 {
    right: 0%;
 }
 
+form {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 8px;
+    padding: 2rem;
+    border-radius: 1%;
+    background-color: #fff;
+    display: grid;
+}
 
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+legend {
+  padding: 1rem;
+  color: navy;
+  font-size: 1.3em;
+}
+label, input, button, select, textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+button {
+  width: 100%;
+  background-color: var(--accent1-color);  
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.2rem;
+  align-items: center
+  
+}
+button:hover{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 8px 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 8px 0;
+}
 /* -------------------- */
 .gallery-container {
     display: flex;
