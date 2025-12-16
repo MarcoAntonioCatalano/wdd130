@@ -86,15 +86,18 @@ nav a {
 }
 
 .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
-    text-align: center; /* Center nested absolute elements */
+    gap: 16px;
 }
 
 .hero img {
     /* Ensure the image is the correct size */
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
+    position: relative;
 }
 
 .hero h1 {
@@ -114,16 +117,14 @@ nav a {
 .hero article {
     /* Happy Customer Article */
     position: absolute; 
-    width: 100%;
+    max-width:100%;
+    height: auto;
     margin: 0;
     padding: 10px;
     background-color: rgba(38, 70, 83, 0.75);
-    opacity: 99%;
     color: var(--text-on-dark);
-    display: flex;
-    flex-direction: row-reverse;
     gap: 1rem;
-    top: 70%;
+    bottom: 5%;
 }
 
 .hero article img {
@@ -134,40 +135,36 @@ nav a {
     float: right;
 }
 
-/* History H2 style (removed conflicting aqua background) */
-
-
-section { /* HISTORY */
+.section-container { /* HISTORY */
     padding: 10px; 
-    display: flex; 
+    display: grid; 
+    position: relative;
+    flex-wrap: wrap;
     background-color: #fff;
     align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    width: 100%;
+    width: 840px;
     height: auto;
-    
+    text-align: center;
+    grid-template-columns: 4;
+    grid-template-rows: 3;
 }
 
-section h2 {
-   position: absolute;
+.section-container h2 {
+   position: relative;
    background-color: #264653;
    color: whitesmoke;
-   text-align: center;
    width: 840px;
-   top: -12%;
-   right: 0%;
+   grid-template-columns: 1 / 4;
 }
-section p {
+.section-container p {
   color: #333;
   text-align: center;
-  padding: 2%;
 }
 /* IMAGE */
-.history-pic {
-    width: 1000px;
+.section-pic {
+    width: 300px;
     color: #f7f7f7; 
-    border-radius: 5%;  
+    border-radius: 5%;
 }
 
 
@@ -193,7 +190,7 @@ section p {
     flex: 1 1 150px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 /* --- Footer Styling --- */
