@@ -90,14 +90,14 @@ nav a {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    gap: 16px;
+    min-height: 300px;
+    gap: 10px;
 }
 
 .hero img {
     /* Ensure the image is the correct size */
     max-width: 100%;
     height: auto;
-    position: relative;
 }
 
 .hero h1 {
@@ -110,7 +110,6 @@ nav a {
     padding: 1rem;
     background-color: rgba(38, 70, 83, 0.75); /* Use RGBA for transparency */
     color: var(--text-on-dark);
-    opacity: 99%;
     z-index: 10;
 }
 
@@ -124,65 +123,65 @@ nav a {
     background-color: rgba(38, 70, 83, 0.75);
     color: var(--text-on-dark);
     gap: 1rem;
-    bottom: 5%;
+    bottom: 8px;
 }
 
 .hero article img {
     /* Style the floating happy client image */
     width: 100px;
     height: auto;
-    border-radius: 5%;
+    border-radius: 8px;
     float: right;
 }
 
-.section-container { /* HISTORY */
-    padding: 10px; 
-    display: grid; 
-    position: relative;
-    flex-wrap: wrap;
+.section-container { /* HISTORY */ 
+    display: flex;
     background-color: #fff;
-    align-items: center;
-    width: 840px;
-    height: auto;
-    text-align: center;
-    grid-template-columns: 4;
-    grid-template-rows: 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .section-container h2 {
    position: relative;
    background-color: #264653;
    color: whitesmoke;
-   width: 840px;
-   grid-template-columns: 1 / 4;
+   width: 100%;
+   max-width: 840px;
 }
 .section-container p {
   color: #333;
   text-align: center;
+  flex: 1;
 }
 /* IMAGE */
 .section-pic {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     color: #f7f7f7; 
-    border-radius: 5%;
+    flex: 0 0 250px; 
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
 /* -------------------- */
 .gallery-container {
     position: relative;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 10px;
-
+    border-radius: 8px;
 }
 
 .gallery-container h2 { 
     /*  ADVENTURE AWAITS YOU!*/
    background-color: #264653;
    color: whitesmoke;
-   width: 840px;
+   width: 100%;
+   max-width: 840px;
    position: relative;
 }
 
@@ -190,7 +189,8 @@ nav a {
     flex: 1 1 150px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* --- Footer Styling --- */
@@ -210,10 +210,10 @@ footer {
 }
 .socialmedia :hover {
     background-color: var(--text-on-dark);
+    border-radius: 8px;
 }
 
 footer img {
   width: 30px;
   height: auto;
-
 }

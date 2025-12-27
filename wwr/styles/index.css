@@ -114,43 +114,33 @@ nav a {
 }
 
 .hero article {
-    /* Happy Customer Article */
-    position: absolute; 
+    position: absolute;
     width: 100%;
     margin: 0;
     padding: 10px;
     background-color: rgba(38, 70, 83, 0.75);
-    opacity: 99%;
     color: var(--text-on-dark);
     display: flex;
-    gap: 1rem;
-    top: 70%;
+    bottom: 8px;
+
 }
 
 
-/* History H2 style (removed conflicting aqua background) */
-
-
-section { /* HISTORY */
-    padding: 10px; 
-    display: flex; 
+section { 
+    display: flex;
     background-color: #fff;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    width: 100%;
-    height: auto;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-section h2 {
-   position: absolute;
+section h2 { /* GET IN TOUCH! */
+   position: relative;
    background-color: #264653;
    color: whitesmoke;
-   text-align: center;
-   width: 840px;
-   top: -12%;
-   right: 0%;
+   width: 100%;
+   max-width: 840px;
 }
 
 form {
@@ -184,7 +174,8 @@ label {
 }
 
 input[type="checkbox"]{
-    width: 16px;
+    max-width: 16px;
+    width: 100%;
     height: 16px;
 }
 button {
@@ -218,28 +209,27 @@ button:hover{
 /* -------------------- */
 .gallery-container {
     display: flex;
-    flex-wrap: wrap;
-    position: relative; 
+    flex-wrap: wrap; 
 }
 
 .gallery-container h2 { 
     /* EXPLORE OUR TRIPS */
+   position: relative;
    background-color: #264653;
    color: whitesmoke;
-   width: 840px;
-   height: auto;
-   position: absolute;
+   width: 100%;
+   max-width: 840px;
 }
 .gallery-item {
     border-radius: 5%;
     overflow: hidden;
-    max-width: 300px;
     margin-top: 10%;
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
+    max-width: 400px;
 }
 
 .gallery-link:hover .gallery-item img {
@@ -260,6 +250,7 @@ footer {
 }
 .socialmedia :hover {
     background-color: var(--text-on-dark);
+    border-radius: 8px;
 }
 
 footer img {
