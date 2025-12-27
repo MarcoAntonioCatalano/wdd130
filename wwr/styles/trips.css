@@ -25,6 +25,7 @@ body {
 header, main, footer {
     /* Set max content width for the main layout */
     max-width: 840px; 
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -46,7 +47,7 @@ h1, h2 {
 }
 
 /* Global padding for flow elements */
-nav, p, section {
+nav, p {
     padding: 8px;
     /* Use margin for space between elements */
     margin: 1rem 0; 
@@ -95,10 +96,11 @@ p {
 main {
     display: grid;
     grid-template-columns: minmax(300px, 1fr) 1.2fr; 
-    gap: 20px;
+    gap: 10px;
     padding: 16px;
     margin: 0 auto;
-    max-width: 840px; /* Adjust this max-width as needed for your overall site */
+    max-width: 840px; 
+    width: 100%;
 }
 
 form {
@@ -197,12 +199,9 @@ button:hover{
     width: 100%;
     margin: 0;
 }
-.gallery-link:hover {
 
-}
 
 .gallery-link:hover h2 {
-    /* Change the text color of the H2 when the link is hovered */
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
@@ -212,6 +211,12 @@ button:hover{
     text-align: center;
     width: 30%;
     height: auto;
+}
+
+.gallery-item img {
+ max-width: 300px;
+ width: 100%;
+ border-radius: 8px;
 }
 
 table {
@@ -253,6 +258,7 @@ footer {
 }
 .socialmedia :hover {
     background-color: var(--text-on-dark);
+    border-radius: 8px;
 }
 
 footer img {

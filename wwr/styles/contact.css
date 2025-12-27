@@ -186,7 +186,7 @@ button:hover{
 }
 
 .gallery-container h2 { 
-    /*  ADVENTURE AWAITS YOU!*/
+    /* We are here to serve you!*/
    background-color: #264653;
    color: whitesmoke;
    max-width: 840px;
@@ -197,6 +197,12 @@ button:hover{
     text-align: center;
     width: 150px;
     height: auto;
+}
+
+.gallery-item img {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 /* --- Footer Styling --- */
