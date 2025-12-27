@@ -161,7 +161,7 @@ fieldset {
   padding: 1rem;
 }
 legend {
-  padding: 1rem;
+  padding: 0.5rem;
   color: navy;
   font-size: 1.3em;
 }
@@ -171,6 +171,10 @@ label, input, button, select, textarea {
 label {
     text-align: left;
     padding-right: 1rem;
+}
+input {
+    font-size: 1.1rem;
+    padding: 0.25rem;
 }
 
 input[type="checkbox"]{
